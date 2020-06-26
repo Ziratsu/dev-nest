@@ -1,3 +1,2 @@
 # dev-nest
-Site who share tools and ressources for (web) developpers
-
+Site sharing tools and ressources for (web) developpers
