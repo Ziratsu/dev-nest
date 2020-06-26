@@ -1,0 +1,58 @@
+.container-tools {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1300px;
+    margin: 70px auto 0;
+    background: crimson; 
+}
+
+.box-tools {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background: violet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f1f1f1;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+/* LISTE CSS */
+
+.container-tools-list {
+    background: lightblue;
+    max-width: 1700px;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.liste-tools-css {
+    width: 700px;
+    height: auto;
+    flex-shrink: 0;
+    background: orange;
+    margin: 10px;
+    list-style-type: none;
+}
+
+.presentation-css-animation {
+    width: 100%;
+    text-align: center;
+}
+
+.item-css-list {
+    background: maroon;
+    margin: 10px 0;
+    padding: 15px;
+    color: #f1f1f1;
+}
