@@ -1,3 +1,5 @@
+/*  --------- TOUTE LA PARTIE TOOLS SE SITUE ICI ----------- */
+
 .container-tools {
     display: flex;
     justify-content: center;
@@ -5,14 +7,19 @@
     width: 80%;
     max-width: 1300px;
     margin: 70px auto 0;
-    background: crimson; 
+    /* background: crimson;  */
+}
+
+.presentation-css-animation {
+    color: #f1f1f1;
+    font-size: 40px;
+    margin-top: 25px;
 }
 
 .box-tools {
     width: 300px;
     height: 200px;
-    margin: 10px;
-    overflow: hidden;
+    margin: 30px;
     flex-shrink: 0;
     background: violet;
     display: flex;
@@ -21,12 +28,125 @@
     color: #f1f1f1;
     cursor: pointer;
     font-size: 30px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    transition: all .2s;
 }
+
+
+
+.box-tools::before, .box-tools::after {
+    position: absolute;
+    content: '';
+    transition: all .2s;
+}
+
+.box-tools::before {
+bottom: -15px;
+height: 15px;
+width: 100%;
+left: 8px;
+transform: skewX(45deg);
+background-color: #196090;
+
+}
+.b2::before {
+background-color: #901919;
+}
+
+.box-tools::after {
+right: -15px;
+height: 100%;
+width: 15px;
+bottom: -8px;
+-webkit-transform: skewY(45deg);
+transform: skewY(45deg);
+background-color: #124364;
+}
+.b2::after {
+background-color: #641212;
+}
+
+
+/* hover btn */
+
+.box-tools:hover {
+    left: 5px;
+    top: 5px;
+} 
+
+.box-tools:active {
+    left: 15px;
+    top: 15px;
+}
+/* hover */
+
+.box-tools:hover::before {
+    bottom: -12px;
+    height: 12px;
+    left: 6px;
+}
+
+.box-tools:hover::after {
+    bottom: -6px;
+    width: 12px;
+    right: -12px;
+}
+
+/* active */
+.box-tools:active::before {
+bottom: -5px;
+height: 5px;
+left: 3px;
+}
+
+.box-tools:active::after {
+bottom: -3px;
+width: 5px;
+right: -5px;
+}
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* LISTE CSS */
 
 .container-tools-list {
-    background: lightblue;
+    /* background: lightblue; */
     max-width: 1700px;
     width: 100%;
     height: 100vh;
@@ -36,12 +156,12 @@
     flex-wrap: wrap;
 }
 
-.liste-tools-css {
+.liste-tools {
     width: 700px;
     height: auto;
     flex-shrink: 0;
-    background: orange;
-    margin: 10px;
+    /* background: orange; */
+    margin: 10px 40px;
     list-style-type: none;
 }
 
@@ -51,8 +171,76 @@
 }
 
 .item-css-list {
-    background: maroon;
-    margin: 10px 0;
+    background: #fed1be;
+    margin: 40px 0;
     padding: 15px;
-    color: #f1f1f1;
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all .2s;
+    cursor: pointer;
+    position: relative;
+    top: 0px;
+    left: 0px;
+
 }
+
+
+
+
+
+.item-css-list::before, .item-css-list::after {
+    position: absolute;
+    content: '';
+    transition: all .2s;
+  }
+  .item-css-list::before {
+  bottom: -15px;
+  height: 15px;
+  width: 100%;
+  left: 8px;
+  transform: skewX(45deg);
+  background-color: #196090;
+  
+  }
+  .b2::before {
+  background-color: #901919;
+  }
+  .item-css-list::after {
+  right: -15px;
+  height: 100%;
+  width: 15px;
+  bottom: -8px;
+  -webkit-transform: skewY(45deg);
+  transform: skewY(45deg);
+  background-color: #124364;
+  }
+  .b2::after {
+  background-color: #641212;
+  }
+  
+  /* hover btn */
+  
+
+  
+  .item-css-list:active {
+  left: 15px;
+  top: 15px;
+  }
+  
+  /* active */
+  .item-css-list:active::before {
+  bottom: -5px;
+  height: 5px;
+  left: 3px;
+  }
+  
+  .item-css-list:active::after {
+  bottom: -3px;
+  width: 5px;
+  right: -5px;
+  }
+  
+  
+  
+  
